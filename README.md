@@ -9,7 +9,7 @@ apptainer pull ngiab-2i2c_v1.2.3.sif docker://quay.io/awiciroh/ngiab-2i2c:v1.2.3
 module load squashfuse 
 module load gocryptfs
 module load squashfs-tools
-apptainer exec --bind /scratch ngiab-2i2c_v1.2.3.sif   jupyter lab --no-browser --ip=$(hostname -s) --port=888
+apptainer exec --bind /scratch ngiab-2i2c_v1.2.3.sif   jupyter lab --no-browser --ip=$(hostname -s) --port=8888
 ```
 Use the command in the compute node where we want to run the Jupyter notebook
 ```
