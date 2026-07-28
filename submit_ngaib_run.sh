@@ -36,8 +36,8 @@ echo "Task $SLURM_ARRAY_TASK_ID -> $HYDROFABRIC_ID on $(hostname)"
 export PATH=/apps/zen5/software/Apptainer/1.4.5/bin:$PATH
 
 # ── Paths ────────────────────────────────────────────────────────────────────
-SIF="$HOME/jupyterNotebook_Singularity/ngiab-2i2c_v1.2.3.sif"   # adjust if elsewhere
-WORKDIR="$HOME/jupyterNotebook_Singularity"                     # holds notebooks/
+SIF="$HOME/CCNH/ngiab-2i2c_v1.2.3.sif"   # adjust if elsewhere
+WORKDIR="$HOME/CCNH"                     # holds notebooks/
 cd "$WORKDIR"
 
 # Per-task matplotlib cache in a writable dir (avoids the /scratch RO warning).

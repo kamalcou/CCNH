@@ -25,5 +25,13 @@ After tunneling use the computer browser to access the compute node and run the 
 ```
 http://127.0.0.1:8888/lab/
 ```
-
+To download the data, you can use the command:
+```
+apptainer exec --cleanenv --bind /scratch ngiab-2i2c_v1.2.3.sif \
+        /ngen/.venv/bin/python notebooks/data_download.py
+```
+To run model, you can submit the job by using the command:
+```
+submit_ngaib_run.sh
+```
 
